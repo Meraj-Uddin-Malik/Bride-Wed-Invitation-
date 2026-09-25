@@ -14774,3 +14774,191 @@ body.invitation-closed .envelope {
   color: #fff !important;
 }
 
+
+
+/* ==========================================================
+   RUKHSATI WALIMA-STYLE — MAROON FINAL
+   Only Bride Rukhsati. Groom/Walima remains untouched.
+========================================================== */
+
+#event-rukhsati {
+  --event-accent: #c5a059 !important;
+  --event-deep: #6f1d32 !important;
+  --event-soft: rgba(111, 29, 50, .09) !important;
+
+  border-color: rgba(111, 29, 50, .42) !important;
+}
+
+
+/* Event number */
+#event-rukhsati > .event-number {
+  color: #7a1f35 !important;
+}
+
+
+/* Main heading */
+#event-rukhsati .celebration-header h3 {
+  color: #7a1f35 !important;
+}
+
+
+/* Kicker */
+#event-rukhsati .celebration-kicker {
+  color: #7a1f35 !important;
+}
+
+
+/* Header divider */
+#event-rukhsati .celebration-divider {
+  color: #7a1f35 !important;
+}
+
+#event-rukhsati .celebration-divider span {
+  background: #7a1f35 !important;
+}
+
+#event-rukhsati .celebration-divider b {
+  color: #7a1f35 !important;
+}
+
+
+/* Date */
+#event-rukhsati .celebration-date {
+  color: #7a1f35 !important;
+  border-color: rgba(122, 31, 53, .30) !important;
+}
+
+
+/* Walima monogram reused by Rukhsati */
+#event-rukhsati .walima-monogram {
+  color: #7a1f35 !important;
+  border-color: rgba(122, 31, 53, .42) !important;
+
+  box-shadow:
+    inset 0 0 0 5px #fcfbf8,
+    inset 0 0 0 6px rgba(122, 31, 53, .16) !important;
+}
+
+#event-rukhsati .walima-monogram i {
+  color: #c5a059 !important;
+}
+
+
+/* Timeline */
+#event-rukhsati .walima-event-timeline::before {
+  background: #7a1f35 !important;
+}
+
+
+/* Timeline cards */
+#event-rukhsati .walima-timeline-card {
+  border-color: rgba(122, 31, 53, .25) !important;
+}
+
+#event-rukhsati .walima-card-script,
+#event-rukhsati .walima-card-title,
+#event-rukhsati .walima-card-title strong,
+#event-rukhsati .walima-time {
+  color: #7a1f35 !important;
+}
+
+#event-rukhsati .walima-card-title svg {
+  color: #7a1f35 !important;
+  stroke: #7a1f35 !important;
+}
+
+
+/* Timeline markers */
+#event-rukhsati .walima-marker {
+  background: #7a1f35 !important;
+  border-color: #7a1f35 !important;
+}
+
+#event-rukhsati .walima-marker span {
+  background: #7a1f35 !important;
+}
+
+
+/* LOCATION / VENUE CARD — green to maroon */
+#event-rukhsati .celebration-detail:first-child {
+  background:
+    linear-gradient(
+      145deg,
+      #7a1f35,
+      #4b1020
+    ) !important;
+
+  border-color: rgba(197, 160, 89, .45) !important;
+
+  box-shadow:
+    0 16px 40px -15px
+    rgba(75, 16, 32, .38) !important;
+}
+
+
+/* Location icon */
+#event-rukhsati
+.celebration-detail:first-child
+.detail-icon {
+  color: #f0d9a6 !important;
+  background: rgba(255,255,255,.08) !important;
+  border-color: rgba(240,217,166,.48) !important;
+}
+
+
+/* Location label */
+#event-rukhsati
+.celebration-detail:first-child
+> span {
+  color: #f0d9a6 !important;
+}
+
+
+/* Venue name */
+#event-rukhsati
+.celebration-detail:first-child
+> strong {
+  color: #fffdf7 !important;
+}
+
+
+/* Map border */
+#event-rukhsati .walima-mini-map {
+  border-color: rgba(122,31,53,.42) !important;
+}
+
+
+/* View Location button */
+#event-rukhsati .walima-map,
+#event-rukhsati .map-link {
+  background: #7a1f35 !important;
+  border-color: #7a1f35 !important;
+  color: #ffffff !important;
+}
+
+#event-rukhsati .walima-map:hover,
+#event-rukhsati .map-link:hover {
+  background: #591426 !important;
+  border-color: #591426 !important;
+  color: #ffffff !important;
+}
+
+
+/* Any SVG/icon still inheriting emerald */
+#event-rukhsati .celebration-detail:not(:first-child) .detail-icon {
+  color: #7a1f35 !important;
+  border-color: rgba(122,31,53,.25) !important;
+}
+
+
+/* Family badge, if present */
+#event-rukhsati .family-event-badge {
+  background: rgba(122,31,53,.07) !important;
+  border-color: rgba(122,31,53,.25) !important;
+}
+
+#event-rukhsati .family-event-badge span,
+#event-rukhsati .family-event-badge strong {
+  color: #7a1f35 !important;
+}
+

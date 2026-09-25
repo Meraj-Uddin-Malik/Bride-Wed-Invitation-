@@ -755,6 +755,13 @@ function eventCelebrationBurst(event) {
       "#3d7862",
       "#c5a059",
       "#f2dfb7"
+    ],
+
+    "event-rukhsati": [
+      "#7a1f35",
+      "#9b4055",
+      "#c5a059",
+      "#f2dfb7"
     ]
   };
 
