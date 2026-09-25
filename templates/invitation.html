@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+
+    <meta
+      name="theme-color"
+      content="#244b3c"
+    />
+
+    <meta
+      name="description"
+      content="A wedding invitation for Meraj and Urooj."
+    />
+
+    <title>Meraj Uddin &amp; Urooj Fatima | Wedding Invitation</title>
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23244b3c'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='39' fill='%23e8d4a0'%3E%E2%99%A5%3C/text%3E%3C/svg%3E"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&family=Italianno&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Critical opening paint: prevents cream flash before CSS loads -->
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #14281f;
+      }
+
+      body.invitation-closed {
+        background: #14281f;
+        overflow: hidden;
+      }
+
+      body.invitation-closed .shell {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .env-preview {
+        display: none !important;
+      }
+    </style>
+
+    <!-- Main Invitation CSS -->
+    <link
+      rel="stylesheet"
+      href="/invitation.css"
+    />
+  
+  <!-- WhatsApp / Social Share Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Meraj & Urooj — Wedding Invitation">
+  <meta property="og:description" content="Together with our families, we invite you to celebrate our special day.">
+  <meta property="og:image" content="https://groom-invitation.netlify.app/wedding-preview.jpg?v=1">
+  <meta property="og:image:secure_url" content="https://groom-invitation.netlify.app/wedding-preview.jpg?v=1">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Meraj and Urooj Wedding Invitation">
+  <meta property="og:url" content="https://groom-invitation.netlify.app/">
+  <meta property="og:site_name" content="Meraj & Urooj Wedding">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Meraj & Urooj — Wedding Invitation">
+  <meta name="twitter:description" content="Together with our families, we invite you to celebrate our special day.">
+  <meta name="twitter:image" content="https://groom-invitation.netlify.app/wedding-preview.jpg?v=1">
+
+</head>
+
+  <body class="invitation-closed">
+
+    <!-- ========================================
+         OPENING ENVELOPE
+    ========================================= -->
+    <div
+      class="intro"
+      id="intro"
+    >
+      <button
+        class="envelope"
+        id="open"
+        type="button"
+        aria-label="Open bride wedding invitation"
+      >
+        <span class="env-preview">
+          <span
+            lang="ar"
+            dir="rtl"
+          >
+            بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+          </span>
+
+          <b>Mr. &amp; Mrs. Muhammad Basheer<br>with Urooj Fatima</b>
+
+          <span>
+            A Celebration of Love
+          </span>
+        </span>
+
+        <!-- Envelope Panels -->
+        <span class="env-panel left"></span>
+        <span class="env-panel right"></span>
+
+        <!-- Wax Seal -->
+        <span class="seal">
+          <img
+            src="/wax-seal.webp"
+            alt="Urooj and Meraj wax seal"
+            width="170"
+            height="170"
+          />
+        </span>
+
+        <!-- Seal Glow -->
+        <span
+          class="seal-light"
+          aria-hidden="true"
+        ></span>
+
+        <span class="intro-hint">
+          Tap the seal to reveal
+        </span>
+      </button>
+    </div>
+
+<!-- ========================================
+         MUSIC CONTROL
+    ========================================= -->
+    <button
+      type="button"
+      id="music-toggle"
+      class="music-toggle"
+      aria-label="Pause background music"
+      hidden
+    >
+      <span aria-hidden="true">
+        ♫
+      </span>
+
+      <span id="music-label">
+        Music on
+      </span>
+    </button>
+
+
+    <!-- ========================================
+         MAIN INVITATION
+    ========================================= -->
+    <main class="shell">
+
+      <!-- ======================================
+           HERO
+      ======================================= -->
+      <section
+        class="hero"
+        id="home"
+        aria-label="Wedding invitation"
+      >
+        <div class="card">
+
+          <div class="wedding-ayah" lang="ar" dir="rtl">
+              <p class="ayah-arabic">وَخَلَقْنَاكُمْ أَزْوَاجًا</p>
+              <span class="ayah-reference">Surah An-Naba • 78:8</span>
+            </div>
+
+          <div class="eyebrow walima-hosts">
+            Mr. &amp; Mrs. Muhammad Basheer
+          </div>
+
+          <div class="walima-invite">
+            <span>cordially invite you to the</span>
+            <strong>Wedding Celebration</strong>
+            <span>of their beloved daughter</span>
+          </div>
+
+          <h1 class="names walima-names">
+            <span class="name-first">
+              Urooj Fatima
+            </span>
+
+            <span class="name-amp">
+              with
+            </span>
+
+            <span class="name-second">
+              Meraj Uddin
+            </span>
+          </h1>
+
+          <div class="walima-blessing">
+            Your gracious presence and prayers
+            <br />
+            will be a cherished part of our celebration.
+          </div>
+
+          <div
+            class="ornament"
+            aria-hidden="true"
+          >
+            ✦
+          </div>
+        </div>
+
+        <a
+          class="scroll"
+          href="#story"
+        >
+          Our celebration ↓
+        </a>
+      </section>
+
+
+      <!-- {{STORY_COMPONENT}} -->
+
+
+      <!-- {{DATE_REVEAL_COMPONENT}} -->
+
+
+      <!-- {{EVENTS_COMPONENT}} -->
+
+
+      <!-- ======================================
+           PRIVACY REQUEST
+      ======================================= -->
+      <section class="privacy-request" aria-labelledby="privacy-title">
+        <div class="privacy-inner">
+          <div class="privacy-ornament" aria-hidden="true">✦</div>
+
+          <div class="privacy-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="presentation">
+              <path d="M15 14.5l2.8-4h12.4l2.8 4h4.5a4 4 0 0 1 4 4v15a4 4 0 0 1-4 4h-27a4 4 0 0 1-4-4v-15a4 4 0 0 1 4-4H15Z"/>
+              <circle cx="24" cy="25.5" r="7"/>
+              <path class="privacy-slash" d="M8 8l32 32"/>
+            </svg>
+          </div>
+
+          <div class="eyebrow">With Love &amp; Respect</div>
+
+          <h2 class="section-title" id="privacy-title">
+            A Gentle Request
+          </h2>
+
+          <div class="privacy-divider" aria-hidden="true">
+            <span></span>
+            <b>✦</b>
+            <span></span>
+          </div>
+
+          <p class="section-copy">
+            To cherish the moment with us, we kindly request
+            <strong>no photos or videos of the Bride &amp; Groom.</strong>
+          </p>
+
+          <p class="privacy-note">
+            Please help us keep the stage private and comfortable.
+          </p>
+
+          <div class="privacy-ornament privacy-ornament-bottom" aria-hidden="true">
+            ❦
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <!-- ======================================
+           FAMILY & RECEIVING
+      ======================================= -->
+      <section class="receiving-section" aria-labelledby="receiving-title">
+        <div class="receiving-inner">
+
+          <div class="receiving-monogram" aria-hidden="true">
+            <span>M</span><i>&amp;</i><span>U</span>
+          </div>
+
+          <div class="receiving-kicker">Our Family</div>
+
+          <h2 class="receiving-title" id="receiving-title">
+            With Compliments
+          </h2>
+
+          <div class="receiving-gold-rule" aria-hidden="true">
+            <span></span><b>✦</b><span></span>
+          </div>
+
+          <div class="family-elders">
+            <span class="family-label">Family Elders</span>
+
+            <div class="elder-names">
+              <strong>Abdul Ghafar</strong>
+              <i>•</i>
+              <strong>Abdul Ghani</strong>
+              <i>•</i>
+              <strong>Abdul Sattar</strong>
+            </div>
+          </div>
+
+          <div class="receiving-heading">
+            <small>AT YOUR SERVICE</small>
+            <span>Receiving You With Pleasure</span>
+          </div>
+
+          <div class="receiving-list">
+
+            <a class="receiving-person" href="tel:03119288772">
+              <span class="receiver-number">01</span>
+              <span class="receiver-info">
+                <strong>Molana Ehsan Ul Haq</strong>
+                <small>03119288772</small>
+              </span>
+              <span class="receiver-call" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/>
+                </svg>
+              </span>
+            </a>
+
+            <a class="receiving-person" href="tel:032216871662">
+              <span class="receiver-number">02</span>
+              <span class="receiver-info"><strong>Inam Ul Haq</strong><small>032216871662</small></span>
+              <span class="receiver-call" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/></svg></span>
+            </a>
+
+            <a class="receiving-person" href="tel:031726816156">
+              <span class="receiver-number">03</span>
+              <span class="receiver-info"><strong>Moeez Ul Haq</strong><small>031726816156</small></span>
+              <span class="receiver-call" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/></svg></span>
+            </a>
+
+            <a class="receiving-person" href="tel:98375146266">
+              <span class="receiver-number">04</span>
+              <span class="receiver-info"><strong>Zaheer Ul Islam</strong><small>98375146266</small></span>
+              <span class="receiver-call" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/></svg></span>
+            </a>
+
+            <a class="receiving-person" href="tel:097836526637">
+              <span class="receiver-number">05</span>
+              <span class="receiver-info"><strong>Abdul Basit</strong><small>097836526637</small></span>
+              <span class="receiver-call" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/></svg></span>
+            </a>
+
+            <a class="receiving-person" href="tel:9389276636">
+              <span class="receiver-number">06</span>
+              <span class="receiver-info"><strong>Abdul Hannan</strong><small>9389276636</small></span>
+              <span class="receiver-call" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/></svg></span>
+            </a>
+
+            <a class="receiving-person" href="tel:0397366625">
+              <span class="receiver-number">07</span>
+              <span class="receiver-info"><strong>Sagheer Ahmed</strong><small>0397366625</small></span>
+              <span class="receiver-call" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z"/></svg></span>
+            </a>
+
+          </div>
+
+          <p class="receiving-note">We look forward to welcoming you.</p>
+
+        </div>
+      </section>
+
+
+      <!-- ======================================
+           FINAL CLOSING
+      ======================================= -->
+      <section class="final-closing" aria-labelledby="closing-title">
+        <div class="closing-glow" aria-hidden="true"></div>
+
+        <div class="closing-inner">
+          <div class="closing-flourish" aria-hidden="true">❦</div>
+
+          <div class="eyebrow">With Heartfelt Gratitude</div>
+
+          <h2 class="closing-title" id="closing-title">
+            <span>Your Presence &amp; Prayers</span>
+            <strong>Are The Greatest Gift</strong>
+          </h2>
+
+          <div class="closing-divider" aria-hidden="true">
+            <span></span>
+            <b>✦</b>
+            <span></span>
+          </div>
+
+          <p class="closing-prayer">
+            May Allah bless this new beginning
+            <br />
+            with love, peace &amp; Barakah.
+          </p>
+
+          <div class="closing-couple">
+            Meraj <span>&amp;</span> Urooj
+          </div>
+
+          <div class="closing-monogram" aria-label="M and U">
+            <span>M</span>
+            <i>&amp;</i>
+            <span>U</span>
+          </div>
+
+          <p class="closing-thanks">
+            Thank you for being part of our special day.
+          </p>
+
+          <div class="closing-flourish closing-flourish-bottom" aria-hidden="true">
+            ❦
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
+    <!-- Main Invitation JavaScript -->
+    <script
+      src="/invitation.js"
+      defer
+    ></script>
+  
+<footer class="wedding-footer">
+  <div>© 2027 Meraj &amp; Urooj</div>
+  <div class="developer-credit">Designed &amp; Developed by Meraj Uddin Malik</div>
+</footer>
+
+</body>
+</html>
